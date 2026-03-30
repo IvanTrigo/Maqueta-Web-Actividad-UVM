@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inclusión Digital - Adultos Mayores</title>
+    <style>
+        :root {
+            --primary-color: #0056b3;
+            --bg-color: #f9f9f9;
+            --text-color: #222;
+            --accent-color: #eef4ff;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.8;
+            font-size: 20px;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+        }
+        header {
+            background: var(--primary-color);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+        nav {
+            position: sticky;
+            top: 0;
+            background: #333;
+            padding: 10px;
+            text-align: center;
+            z-index: 1000;
+        }
+        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+        
+        .container { padding: 40px; max-width: 1000px; margin: auto; }
+        
+        .card {
+            background: white;
+            border: 2px solid #ddd;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+        .img-container { text-align: center; margin-top: 20px; }
+        .img-mision {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        /* Estilos para las ubicaciones */
+        .grid-centros {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .centro-item {
+            background: #fff;
+            border-left: 5px solid var(--primary-color);
+            padding: 15px;
+            border-radius: 4px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        .centro-item h3 { margin-top: 0; color: var(--primary-color); }
+        .map-link { color: #0056b3; font-size: 18px; font-weight: bold; }
+
+        button {
+            background: var(--primary-color);
+            color: white;
+            padding: 15px 30px;
+            font-size: 22px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Conectando Generaciones</h1>
+    <p>Clases simples de tecnología para adultos mayores de 55 a 70 años</p>
+</header>
+
+<nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#precios">Precios</a>
+    <a href="#centros">Centros</a>
+</nav>
+
+<div class="container" id="inicio">
+    <section class="card">
+        <h2>Nuestra Misión</h2>
+        <p>Buscamos eliminar la exclusión de adultos ante el uso de elementos tecnológicos y digitales, mejorando su comunicación e independencia.</p>
+        <div class="img-container">
+            <img src="tu-imagen.jpg" alt="Personas mayores aprendiendo" class="img-mision">
+        </div>
+    </section>
+
+    <section id="servicios">
+        <h2>¿Cómo aprendemos?</h2>
+        <ul>
+            <li><strong>Clases Presenciales:</strong> En puntos estratégicos de fácil acceso.</li>
+            <li><strong>Clases Online:</strong> Para aprender desde la comodidad del hogar.</li>
+            <li><strong>Contenido Audiovisual:</strong> Videos educativos paso a paso.</li>
+        </ul>
+    </section>
+
+    <section id="precios" class="card" style="background-color: var(--accent-color);">
+        <h2>Planes de Apoyo</h2>
+        <p>1. <strong>Pago por curso:</strong> Navegación segura y uso de PC.</p>
+        <p>2. <strong>Suscripción Mensual:</strong> Asesoría continua para conceptos específicos.</p>
+        <button>Inscribirse Ahora</button>
+    </section>
+
+    <section id="centros">
+        <h2>Centros Educativos</h2>
+        <p>Contamos con sedes físicas equipadas con tecnología y ambientes cómodos para su aprendizaje:</p>
+        
+        <div class="grid-centros">
+            <div class="centro-item">
+                <h3>Sede Norte - Biblioteca Central</h3>
+                <p>📍 Av. de la Ilustración 123, Sector Norte.</p>
+                <p>⌚ Horarios: Lunes a Viernes (9:00 - 13:00)</p>
+                <a href="#" class="map-link">Ver en el mapa →</a>
+            </div>
+
+            <div class="centro-item">
+                <h3>Sede Sur - Centro Comunitario</h3>
+                <p>📍 Calle Las Acacias 456, Barrio San José.</p>
+                <p>⌚ Horarios: Martes y Jueves (15:00 - 18:00)</p>
+                <a href="#" class="map-link">Ver en el mapa →</a>
+            </div>
+
+            <div class="centro-item">
+                <h3>Sede Centro - Punto Digital</h3>
+                <p>📍 Paseo de los Héroes 789, Edificio Alfa.</p>
+                <p>⌚ Horarios: Sábados (10:00 - 14:00)</p>
+                <a href="#" class="map-link">Ver en el mapa →</a>
+            </div>
+        </div>
+    </section>
+</div>
+
+</body>
+</html>
