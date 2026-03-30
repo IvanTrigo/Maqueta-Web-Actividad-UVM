@@ -7,6 +7,7 @@
     <style>
         :root {
             --primary-color: #0056b3;
+            --yt-red: #FF0000;
             --bg-color: #f9f9f9;
             --text-color: #222;
             --accent-color: #eef4ff;
@@ -45,16 +46,27 @@
             border-radius: 8px;
         }
 
-        .img-container { text-align: center; margin-top: 20px; }
-        .img-mision {
-            width: 100%;
-            max-width: 600px;
-            height: auto;
+        /* Estilo para la sección de YouTube */
+        .yt-section {
+            background: #f0f0f0;
+            border: 2px dashed #cc0000;
+            padding: 25px;
+            margin-bottom: 30px;
             border-radius: 12px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
         }
-        
-        /* Estilos para las ubicaciones */
+        .yt-button {
+            background: var(--yt-red);
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 15px;
+            font-size: 20px;
+        }
+
         .grid-centros {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -93,6 +105,7 @@
     <a href="#inicio">Inicio</a>
     <a href="#servicios">Servicios</a>
     <a href="#precios">Precios</a>
+    <a href="#videos">Videos</a>
     <a href="#centros">Centros</a>
 </nav>
 
@@ -100,9 +113,6 @@
     <section class="card">
         <h2>Nuestra Misión</h2>
         <p>Buscamos eliminar la exclusión de adultos ante el uso de elementos tecnológicos y digitales, mejorando su comunicación e independencia.</p>
-        <div class="img-container">
-            <img src="tu-imagen.jpg" alt="Personas mayores aprendiendo" class="img-mision">
-        </div>
     </section>
 
     <section id="servicios">
@@ -121,29 +131,34 @@
         <button>Inscribirse Ahora</button>
     </section>
 
+    <section id="videos" class="yt-section">
+        <h2>🎥 Aprende desde Casa</h2>
+        <p>¿Prefieres repasar las lecciones a tu propio ritmo? ¡Visita nuestro canal oficial!</p>
+        <h3><strong>Conectando Generaciones Aprendizaje</strong></h3>
+        <p>Encontrarás tutoriales paso a paso sobre WhatsApp, seguridad en internet y mucho más.</p>
+        <a href="https://youtube.com" target="_blank" class="yt-button">Ir al Canal de YouTube</a>
+    </section>
+
     <section id="centros">
         <h2>Centros Educativos</h2>
-        <p>Contamos con sedes físicas equipadas con tecnología y ambientes cómodos para su aprendizaje:</p>
+        <p>Contamos con sedes físicas equipadas para su aprendizaje:</p>
         
         <div class="grid-centros">
             <div class="centro-item">
                 <h3>Sede Norte - Biblioteca Central</h3>
                 <p>📍 Av. de la Ilustración 123, Sector Norte.</p>
-                <p>⌚ Horarios: Lunes a Viernes (9:00 - 13:00)</p>
                 <a href="#" class="map-link">Ver en el mapa →</a>
             </div>
 
             <div class="centro-item">
                 <h3>Sede Sur - Centro Comunitario</h3>
                 <p>📍 Calle Las Acacias 456, Barrio San José.</p>
-                <p>⌚ Horarios: Martes y Jueves (15:00 - 18:00)</p>
                 <a href="#" class="map-link">Ver en el mapa →</a>
             </div>
 
             <div class="centro-item">
                 <h3>Sede Centro - Punto Digital</h3>
                 <p>📍 Paseo de los Héroes 789, Edificio Alfa.</p>
-                <p>⌚ Horarios: Sábados (10:00 - 14:00)</p>
                 <a href="#" class="map-link">Ver en el mapa →</a>
             </div>
         </div>
